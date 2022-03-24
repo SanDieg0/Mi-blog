@@ -7,7 +7,7 @@
 */
 :root{
     /*Colores*/
-    --color1: #cd588f;
+    --color1: #d885acab;
     --color2: #eeeeee;
 }
 
@@ -113,12 +113,17 @@ header{
     justify-content: center;
 }
 .join{
-    color: var(--color1);
+    color: var(--color2);
     font-size: 1.2rem;
     font-weight: 700;
     position: absolute;
     bottom: 0;
     margin: 50px 45%;
-    text-decoration: underline;
     text-align: center;
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
+    border-radius: 20px;
+    width: 10%;
+    padding: 5px 3px;
+    
 }
