@@ -7,8 +7,9 @@
 */
 :root{
     /*Colores*/
-    --color1: #d885acab;
+    --color1: #e47ea1;
     --color2: #eeeeee;
+    --color3: #367486;
 }
 
 *{
@@ -80,9 +81,17 @@ nav .nav-logo-container a{
     font-size: 1.6rem;
     font-weight: 800;
 }
-nav .nav-logo-container img{
+
+nav .nav-logo-container .logo-container{
     width: 70px;
+    background-color: var(--color2);
+    border-radius: 10%;
+    padding: 0 10px;
+}
+nav .nav-logo-container img{
+    width: 50px;
     margin-top: 10px;
+    /* opacity: 20%; */
 }
 
 nav .profile-link{
@@ -107,23 +116,28 @@ header{
 
 .welcome{
     color: var(--color2);
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: 2rem;
     margin: 50px auto;
     justify-content: center;
 }
+.welcome h1{
+    font-weight: 800;
+}
 .join{
-    color: var(--color2);
     font-size: 1.2rem;
     font-weight: 700;
     position: absolute;
     bottom: 0;
-    margin: 50px 45%;
+    margin: 50px calc(100vw / 2 - 70px);
     text-align: center;
-    background-color: var(--color1);
-    border: 1px solid var(--color1);
+    background-color: var(--color3);
+    border: 1px solid var(--color3);
     border-radius: 20px;
-    width: 10%;
+    width: 140px;
     padding: 5px 3px;
-    
+    font-family: 'Nunito', sans-serif;
+}
+.join:hover{
+    background-color: var(--color2);
+    border: 1px solid var(--color2);
 }
