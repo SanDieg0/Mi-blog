@@ -38,7 +38,7 @@ a{
 }
 header{
     width: 100%;
-    height: 100%;
+    height: 50px + 90px;
     display: grid;
     grid-template-rows: 50px 90px;
 }
@@ -104,7 +104,7 @@ nav .profile-link a{
     font-weight: 900;
     border-bottom: 1px solid var(--color2);
 }
-header{
+.body-container{
     width: 100vw;
     height: 100vh;
     background-image: url("https://3.bp.blogspot.com/--3aBhO_XLDM/X4PIoPoYymI/AAAAAAAADyc/OTYgVNzAKJAelo0UCLrJmM8iB6n-rgcPQCNcBGAsYHQ/w919/nature-minimalist-scenery-silhouette-uhdpaper.com-4K-8.307-wp.thumbnail.jpg");
@@ -114,6 +114,19 @@ header{
 }
 
 
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+}
+.main-container section{
+    display: grid;
+    grid-column: 2;
+    place-items: center;
+    height: 350px;
+    margin-top: 80px;
+
+}
 .welcome{
     color: var(--color2);
     font-size: 2rem;
@@ -128,7 +141,7 @@ header{
     font-weight: 700;
     position: absolute;
     bottom: 0;
-    margin: 50px calc(100vw / 2 - 70px);
+    margin: 50px auto;
     text-align: center;
     background-color: var(--color3);
     border: 1px solid var(--color3);
