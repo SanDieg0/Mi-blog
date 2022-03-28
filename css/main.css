@@ -49,6 +49,22 @@ header{
     max-width: 980px;
     margin: auto;
 }
+img:hover{
+    transition: transform 1s;
+    transform: scale(1.025);
+}
+img:not(:hover){
+    transition: transform 1s;
+    transform: scale(1);
+}
+button:hover{
+    transition: transform 1s;
+    transform: scale(1.025);
+}
+button:not(:hover){
+    transition: transform 1s;
+    transform: scale(1);
+}
 
 header .header-icons-container{
     width: 100%;
@@ -70,6 +86,12 @@ header .icons div{
 }
 .icons a div:hover{
     filter: invert(50%);
+    transition: transform 1s;
+    transform: scale(1.25);
+}
+.icons a div:not(:hover){
+    transition: transform 1s;
+    transform: scale(1);
 }
 
 
@@ -82,17 +104,26 @@ nav .nav-logo-container{
     margin-left: 50px;
     align-self: center;
     justify-self: start;
+    display: flex;
+    align-items: center;
 }
-
-nav .nav-logo-container a{
+.nav-logo-container p{
+    margin-left: 10px;
     display: inline-block;
     color: var(--color2);
     font-size: 1.6rem;
     font-weight: 800;
 }
-nav .nav-logo-container a:hover{
+.nav-logo-container:hover{
+    transition: transform 1s;
+    transform: scale(1.03);
+}
+.nav-logo-container:not(:hover){
+    transition: transform 1s;
+    transform: scale(1);
+}
+nav .nav-logo-container p:hover{
     color: var(--color3);
-    border-bottom: 1px solid var(--color3);
 }
 
 nav .nav-logo-container .logo-container{
@@ -116,6 +147,14 @@ nav .profile-link a{
     color: var(--color2);
     font-weight: 900;
     border-bottom: 1px solid var(--color2);
+}
+nav .profile-link:hover{
+    transition: transform 1s;
+    transform: scale(1.25);
+}
+nav .profile-link:not(:hover){
+    transition: transform 1s;
+    transform: scale(1);
 }
 nav .profile-link a:hover{
     color: var(--color3);
@@ -184,11 +223,17 @@ nav .profile-link a:hover{
 .blogs-news-container{
     background-color: #e6e9ed;
     padding: 0 50px 40px;
+    margin: 25px auto;
 }
 .blogs-main-new{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
+}
+.blogs-main-new h3{
+    margin: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 800;
 }
 .blogs-news-img-container{
     grid-column: 1;
@@ -199,6 +244,11 @@ nav .profile-link a:hover{
 .blogs-news-info-container{
     grid-column: 2;
 }
+.blogs-news-info-container h2{
+    margin: 10px 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
 .blogs-news-info-container p{
     margin-bottom: 35px;
 }
@@ -206,6 +256,10 @@ nav .profile-link a:hover{
     border: 1px solid var(--color3);
     padding: 10px 15px;
     font-size: 12px;
+}
+.blogs-button:hover{
+    background-color: var(--color3);
+    color: var(--color2);
 }
 
 .blogs-posts-container{
@@ -215,12 +269,18 @@ nav .profile-link a:hover{
     border-bottom: 1px solid #cdd2da;
     padding-bottom: 20px;
     text-align: center;
+    font-size: 1.7rem;
+    font-weight: 900;
 }
 .blogs-posts-container .post-container{
     display: inline-block;
     padding-left: 10px;
     max-width: 30%;
     margin: 20px 0;
+}
+.blogs-posts-container h4{
+    margin: 5px 0 8px;
+    font-weight: 900;
 }
 .blogs-posts-container .post-container p{
     margin-bottom: 35px;
@@ -240,4 +300,31 @@ footer p{
     color: var(--color2);
     height: 100%;
     padding-top: 14px;
+}
+
+/* --------------------------------------------- */
+
+.main-container-blog{
+    display: grid;
+    height: auto;
+    background-color: var(--color2);
+    
+}
+.blogpost-img-container{
+    padding: 25px 50px;
+    
+}
+.blogpost-img-container img{
+    width: 100%;
+}
+.blogpost-main-container{
+    padding: 0 50px;
+}
+.blogpost-main-container h3{
+    border-bottom: 1px solid #cdd2da;
+    margin: 10px 0;
+}
+.blogpost-main-container h1{
+    margin: 10px 0;
+    font-size: 35px;
 }
