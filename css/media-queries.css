@@ -9,4 +9,16 @@
     .blogs-news-info-container{
         grid-area: 3 / 1;
     }
+    .blogs-posts-container{
+        margin: 0 auto;
+    }
+    .blogs-posts-container .post-container{
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 900px){
+    .blogs-posts-container .post-container{
+        max-width: 95%;
+    }
 }
