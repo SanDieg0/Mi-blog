@@ -383,3 +383,7 @@ footer p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.proyect-container{
+    margin: 20px auto;
+    padding: 0 10px;
+}
