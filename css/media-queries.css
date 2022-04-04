@@ -15,6 +15,12 @@
     .blogs-posts-container .post-container{
         max-width: 45%;
     }
+    .proyects-main-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .profile-main-container .profile-container{
+        display: block;
+    }
 }
 
 @media (max-width: 600px){
