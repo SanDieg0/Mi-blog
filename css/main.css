@@ -9,7 +9,7 @@
     /*Colores*/
     --color1: #e47ea1;
     --color2: #eeeeee;
-    --color3: #367486;
+    --color3: #000;
     --color4: #47cfac;
 }
 
@@ -39,9 +39,11 @@ a{
     display: inline;
     color: black;
 }
+.main-container .join a{
+    color: var(--color3);
+}
 header{
     width: 100%;
-    height: 50px + 90px;
     display: grid;
     grid-template-rows: 50px 90px;
 }
@@ -70,10 +72,10 @@ header .header-icons-container{
     width: 100%;
     height: 50px;
     display: grid;
+    background-color: var(--color3);
 }
 header .header-icons-container .icons{
     width: 300px;
-    height: auto;
     display: flex;
     justify-items: flex-end;
     align-items: center;
@@ -200,16 +202,19 @@ nav .profile-link a:hover{
     bottom: 0;
     margin: 50px auto;
     text-align: center;
-    background-color: var(--color3);
-    border: 1px solid var(--color3);
+    background-color: var(--color2);
+    border: 1px solid var(--color2);
     border-radius: 20px;
     width: 140px;
     padding: 5px 3px;
     font-family: 'Nunito', sans-serif;
 }
 .join:hover{
-    background-color: var(--color2);
-    border: 1px solid var(--color2);
+    background-color: var(--color3);
+    border: 1px solid var(--color3);
+}
+.join a:hover{
+    color: var(--color2);
 }
 
 /* --------------------------------------- */
@@ -334,9 +339,14 @@ footer p{
     min-height: 250px;
     background-color: #cdd2da;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
-.contact-main-container div{
+.contact-main-container  .contact-container{
+    display: inline-block;
+    width: 49.5%;
+    height: 100%;
+}
+.contact-main-container  .contact-container div{
     display: inline-block;
     width: 49.5%;
     height: 100%;

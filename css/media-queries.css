@@ -17,8 +17,77 @@
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 600px){
     .blogs-posts-container .post-container{
         max-width: 95%;
+    }
+
+    header{
+        grid-template-rows: 35px 70px;
+    }
+    .header-icons-container{
+        height: 35px;
+    }
+    nav{
+        height: 70px;
+    }
+
+    header nav .nav-logo-container p{
+        display: none;
+    }
+
+    header .header-icons-container{
+        height: 35px;
+    }
+    header .header-icons-container .icons{
+        width: 180px;
+        justify-content: end;
+    }
+    header .icons div{
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+    }
+
+    nav .nav-logo-container .logo-container{
+        width: 60px;
+    }
+    nav .nav-logo-container .logo-container img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .blogpost-main-container .grid-container article{
+        margin-bottom: 30px;
+    }
+
+    .contact-main-container div img{
+        width: 50px;
+    }
+    .contact-main-container .contact-container{
+        margin: 20px 0 0;
+        padding: 0 20px;
+    }
+    .contact-main-container  .contact-container div{
+        display: block;
+        width: 100%;
+        height: 50%;
+    }
+    .contact-main-container .contact-left, .contact-right{
+        text-align: initial;
+        margin: 20px;
+    }
+
+
+    .proyects-main-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+    .proyects-main-container .proyect-container{
+        padding: 0 25px;
+    }
+
+     footer p{
+        padding-top: 5px;
     }
 }
